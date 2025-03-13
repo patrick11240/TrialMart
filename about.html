@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+.vision-mission-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 124px;
+}
+
+.vision-section,
+.mission-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-left: 4px solid #2c5282;
+    background-color: #f8fafc;
+    transition: transform 0.3s ease;
+}
+
+.vision-section:hover,
+.mission-section:hover {
+    transform: translateX(10px);
+}
+
+.section-title {
+    color: #2c5282;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vision-text,
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a5568;
+}
+.coopmart-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.coopmart-section .section-title {
+    color: #1a365d;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.coopmart-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #2c5282;
+    border-radius: 2px;
+}
+
+.coopmart-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.coopmart-text:last-child {
+    margin-bottom: 0;
+}
+
+.coopmart-text a {
+    color: #2c5282;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.coopmart-text a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #2c5282;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.coopmart-text a:hover {
+    color: #1a365d;
+}
+
+.coopmart-text a:hover::after {
+    transform: scaleX(1);
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.coopmart-section {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutpage with Chatbot</title>
+    <link rel="stylesheet" href="Style\Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+        <a href="index.php">
+           <img src="img\Downloaded adobe logo.png" alt="Logo" class="logo-img">
+        </a>
+       </div>
+       <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.php">Product</a></li>
+            <li><a href="#services">Services</a></li>
+           <li><a href="#contact">Contact</a></li>
+           <li><a href="LoginOut.php">Logout</a></li>
+       </ul>
+   </nav>
+
+    <main class="vision-mission-container">
+        
+        <section class="coopmart-section">
+            <h2 class="section-title">History of  Coop Mart Tiaong, Quezon</h2>
+            <p class="coopmart-text">
+                Coop Mart in Tiaong, Quezon, operates under the Sorosoro Ibaba Development Cooperative (SIDC), a cooperative established in 1969. SIDC has expanded its services to include various retail outlets such as Coop Supermarts, Coop Marts, Coop Mart Jr., One Stop Shops, and One Click Marts, primarily located in Batangas.
+            </p>
+            <p class="coopmart-text">
+                In Tiaong, SIDC manages a One Stop Shop branch situated in Barangay Quipot. This outlet offers a wide range of products, including groceries, hardware supplies, and exclusive SIDC items like Golden Lays Eggs, Gintong Gawad Feeds, and Waismart household products.
+            </p>
+            <p class="coopmart-text">
+                The One Stop Shop in Tiaong also caters to wholesale clients, including hotels, restaurants, and cafés. Positions such as Coop Mart Wholesale Representative are available to manage these accounts, focusing on customer satisfaction and revenue generation.
+            </p>
+            <p class="coopmart-text">
+                For more information about SIDC's products, services, and membership benefits, you can visit their official website: <a href="https://sidc.coop/" target="_blank">SIDC Official Website</a>.
+            </p>
+        </section>
+
+        <section class="vision-section">
+            <h2 class="section-title">Vision</h2>
+            <p class="vision-text">
+                SIDC shall be recognized as a world-class cooperative empowering stakeholders for a sustainable progressive life.
+            </p>
+        </section>
+    
+        <section class="mission-section">
+            <h2 class="section-title">Mission</h2>
+            <p class="mission-text">
+                SIDC shall develop and offer competitive quality production and services, adopting technologically advanced systems to build prosperous lives and strengthen the spiritual and social development of stakeholders.
+            </p>
+        </section>
+    
+    </main>
+    
+
+
+     <!-- Chatbot Button -->
+     <div class="chat-bot-button" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>Chat Support</h3>
+            <span class="close-chat" onclick="toggleChat()">&times;</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will be displayed here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userMessage" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Your company description here.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll(".vision-section, .mission-section, .coopmart-section");
+            
+            sections.forEach(section => {
+                section.addEventListener("mouseover", () => {
+                    section.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+                });
+                section.addEventListener("mouseout", () => {
+                    section.style.boxShadow = "none";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
